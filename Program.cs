@@ -1,82 +1,90 @@
-﻿//Задача 41: Пользователь вводит с клавиатуры числа через запятую. Посчитайте, сколько чисел больше 0 ввёл пользователь. 0, 7, 8, -2, -2 -> 2 -1, -7, 567, 89, 223-> 3
+﻿
 
-Console.Write("Введите числа через запятую: ");
-int[] numbers = StringToNum(Console.ReadLine());
-PrintArray(numbers);
-int sum = 0;
-for (int i = 0; i < numbers.Length; i++)
+//Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+
+
+Console.WriteLine($" Количество  чисел в массиве:\n");
+int[] numbers = new int[10];
+
+
+void FillArray(int[] array, int min, int max)
 {
-    if (numbers[i] > 0)
-    {
-        sum++;
-    }
+  for (int i = 0; i<array.Length; i++ ){
+    array[i] = new Random().Next(min, max);
+  }
 }
+
+void WriteArray(int[] array)
+{
+    for (int i = 0; i<array.Length; i++ ){
+    Console.Write($"| {array[i] + " "} ");
+  }
+  Console.WriteLine();
+}
+
+int PositiveNum(int[] array)
+{
+    int number = 0;
+    for (int i = 0; i<array.Length; i++ ){
+    if (array[i] % 2 == 1)
+    {
+      number++;
+    }
+  }
+  return number;
+}
+
+FillArray(numbers, 100, 1000);
+WriteArray(numbers);
 Console.WriteLine();
-Console.WriteLine($"количество значений больше 0 = {sum}");
+
+int number = PositiveNum(numbers);
+Console.Write($"Количество чётных чисел в массиве: {number}");
 
 
-int[] StringToNum(string input)
+
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+
+int[] CreatRandomArray(int size)
 {
-    int count = 1;
-    for (int i = 0; i < input.Length; i++)
+    int[] newArray = new int[size];
+    for (int i = 0; i < size; i++)
     {
-        if (input[i] == ',')
-        {
-            count++;
-        }
+        newArray[i] = new Random().Next(1, 10);
+
     }
+    return newArray;
 
-    int[] numbers = new int [count];
-    int index = 0;
+}
 
-    for (int i = 0; i < input.Length; i++)
-    {
-        string temp = "";
-
-        while (input [i] != ',')
-        {
-        if(i != input.Length - 1)
-        {
-            temp += input [i].ToString();
-            i++;
-        }
-        else
-        {
-            temp += input [i].ToString();
-            break;
-        }
-        }
-        numbers[index] = Convert.ToInt32(temp);
-        index++;
-    }
-    return numbers;
+void ShowArray(int[] numbers)
+{
+    Console.Write($"получившийся массив  -> [");
+    for (int i = 0; i < numbers.Length; i++)
+        Console.Write(numbers[i] + " ");
 }
 
 
-void PrintArray(int[] array)
-{
-    Console.Write("[ ");
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-    Console.Write("]");
-}
+ int[] SumNegativeNum(int[] numbers)
+ {
+
+     int sum = 0;
+
+ for (int a = 0; a < numbers.Length; a+=2)
+    sum = sum + numbers[a];
+
+    Console.WriteLine($"] -> сумма элементов cтоящих на нечётных позициях = {sum}");
 
 
-// Задача 43. Напишите программу, которая найдёт точку пересечения двух прямых, 
-// заданных уравнениями y = k1 * x + b1 y = k2 * x + b2 значения b1, k1, b2 и k2 задаются пользователем.
+  return numbers;
+ }
 
-Console.WriteLine("введите значение b1");
-double b1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число k1");
-double k1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите значение b2");
-double b2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число k2");
-double k2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] myArray = CreatRandomArray(size);
+ShowArray(myArray);
+SumNegativeNum(myArray);
 
-double x = (-b2 + b1)/(-k1 + k2);
-double y = k2 * x + b2;
-
-Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");

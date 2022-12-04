@@ -1,0 +1,15 @@
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\bin\Debug\net7.0\Lesson008.exe
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\bin\Debug\net7.0\Lesson008.deps.json
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\bin\Debug\net7.0\Lesson008.runtimeconfig.json
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\bin\Debug\net7.0\Lesson008.dll
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\bin\Debug\net7.0\Lesson008.pdb
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.csproj.AssemblyReference.cache
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.AssemblyInfoInputs.cache
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.AssemblyInfo.cs
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.csproj.CoreCompileInputs.cache
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.dll
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\refint\Lesson008.dll
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.pdb
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\Lesson008.genruntimeconfig.cache
+C:\Users\Сергей\Desktop\Домашняя\Lesson005\Lesson006\Lesson007\Lesson008\obj\Debug\net7.0\ref\Lesson008.dll
